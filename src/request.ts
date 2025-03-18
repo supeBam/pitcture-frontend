@@ -7,6 +7,9 @@ const PROD_BASE_URL = 'http://8.134.118.135'
 // const PROD_BASE_URL = "http://81.69.229.63";
 // 创建 Axios 实例
 const myAxios = axios.create({
+  // 开发环境
+  // baseURL: DEV_BASE_URL,
+  // 线上地址
   baseURL: PROD_BASE_URL,
   timeout: 10000,
   withCredentials: true,
