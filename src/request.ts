@@ -3,10 +3,11 @@ import { message } from 'ant-design-vue'
 
 // 区分开发和生产环境
 const DEV_BASE_URL = 'http://localhost:8123'
+const PROD_BASE_URL = 'http://8.134.118.135'
 // const PROD_BASE_URL = "http://81.69.229.63";
 // 创建 Axios 实例
 const myAxios = axios.create({
-  baseURL: DEV_BASE_URL,
+  baseURL: PROD_BASE_URL,
   timeout: 10000,
   withCredentials: true,
 })
