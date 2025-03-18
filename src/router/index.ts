@@ -12,6 +12,8 @@ import AddSpacePage from '@/pages/AddSpacePage.vue'
 import MySpacePage from '@/pages/MySpacePage.vue'
 import SpaceDetailPage from '@/pages/SpaceDetailPage.vue'
 import SearchPicturePage from '@/pages/SearchPicturePage.vue'
+import SpaceAnalyzePage from '@/pages/SpaceAnalyzePage.vue'
+import SpaceUserManagePage from '@/pages/admin/SpaceUserManagePage.vue'
 
 // @author 程序员鱼皮 <a href="https://www.codefather.cn">编程导航原创项目</a>
 const router = createRouter({
@@ -47,12 +49,12 @@ const router = createRouter({
       name: '空间管理',
       component: SpaceManagePage,
     },
-    // {
-    //   path: '/spaceUserManage/:id',
-    //   name: '空间成员管理',
-    //   component: SpaceUserManagePage,
-    //   props: true,
-    // },
+    {
+      path: '/spaceUserManage/:id',
+      name: '空间成员管理',
+      component: SpaceUserManagePage,
+      props: true,
+    },
     {
       path: '/add_picture',
       name: '创建图片',
@@ -85,11 +87,11 @@ const router = createRouter({
       component: SpaceDetailPage,
       props: true,
     },
-    // {
-    //   path: '/space_analyze',
-    //   name: '空间分析',
-    //   component: SpaceAnalyzePage,
-    // },
+    {
+      path: '/space_analyze',
+      name: '空间分析',
+      component: SpaceAnalyzePage,
+    },
     {
       path: '/search_picture',
       name: '图片搜索',

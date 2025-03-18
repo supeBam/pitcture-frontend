@@ -4,7 +4,7 @@
       <a-col flex="200px">
         <router-link to="/">
           <div class="title-bar">
-            <img class="logo" src="../assets/logo.svg" alt="logo" />
+            <img class="logo" src="../assets/logo.jpg" alt="logo" />
             <div class="title">鱼皮云图库</div>
           </div>
         </router-link>
@@ -88,11 +88,11 @@ const originItems = [
     label: '空间管理',
     title: '空间管理',
   },
-  {
-    key: 'others',
-    label: h('a', { href: 'https://www.codefather.cn', target: '_blank' }, '编程导航'),
-    title: '编程导航',
-  },
+  // {
+  //   key: 'others',
+  //   label: h('a', { href: 'https://www.codefather.cn', target: '_blank' }, '编程导航'),
+  //   title: '编程导航',
+  // },
 ]
 
 // 根据权限过滤菜单项
